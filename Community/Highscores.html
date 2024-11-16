@@ -1,0 +1,1872 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Highscores - Miracle</title>
+	<meta name="description" content="Miracle is an Alternative Tibia Server 7.4 free to play and massive multiplayer online role playing game (MMORPG)." />
+	<meta name="author" content="Kanohn" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" content="tibia, tibia 7.4, otserv, free online game, free multiplayer game, ots, open tibia server" />
+	<link rel="shortcut icon" href="https://miracle74.com/layouts/miracle/images/favicon.png" type="image/png">
+	<script type='text/javascript'>
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+try
+  {
+  xmlHttp=new XMLHttpRequest();
+  }
+catch (e)
+  {
+  try
+    {
+    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+    }
+  catch (e)
+    {
+    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  }
+return xmlHttp;
+}
+
+function MouseOverBigButton(source)
+{
+  source.firstChild.style.visibility = "visible";
+}
+function MouseOutBigButton(source)
+{
+  source.firstChild.style.visibility = "hidden";
+}
+function BigButtonAction(path)
+{
+  window.location = path;
+}
+varloginStatus=0; loginStatus='false';var activeSubmenuItem='highscores';  var IMAGES=0; IMAGES='https://miracle74.com/https://miracle74.com/layouts/miracle/images'; var LINK_ACCOUNT=0; LINK_ACCOUNT='https://miracle74.com';</script>	<link href="https://miracle74.com/layouts/miracle/basic_v12.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://miracle74.com/layouts/miracle/flickity.css" media="screen">
+	<script type='text/javascript'> var IMAGES=0; IMAGES='https://miracle74.com/layouts/miracle/images'; var g_FormField='';  var LINK_ACCOUNT=0; LINK_ACCOUNT='';</script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/initialize.js"></script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/js/jquery-3.6.4.js"></script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/generic_v2.js"></script>
+	<!-- Meta Pixel Code -->
+	<!-- <script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1637663457003619');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1637663457003619&ev=PageView&noscript=1"
+	/></noscript>-->
+	<!-- End Meta Pixel Code -->
+</head>
+<body onBeforeUnLoad="SaveMenu();" onUnload="SaveMenu();">
+	<div class="top-bar">
+		<div class="menu">
+			<span class="title"><a href="?subtopic=latestnews">Welcome to <b>Miracle!</b></a></span>
+			<div class="separator"></div>
+			<div class="links">
+				<a href="?subtopic=createaccount">Create Account</a>
+				<a href="?subtopic=downloads">Download</a>
+				<a href="?subtopic=aboutus">About Us</a>
+				<a href="?subtopic=serverinfo">Server Info</a>
+				<a href="?subtopic=gamewiki">Game Wiki</a>
+				<a href="?subtopic=casts">Casts</a>
+				<a href="?subtopic=premium">Premium</a>
+				<a href="?subtopic=donate"><span class="donate">Donate</span></a>
+			</div>
+			<div class="social">
+				<a href="https://discord.gg/Vw2mR6trHb" target="_BLANK"><img style="vertical-align: -2px;" src="https://miracle74.com/layouts/miracle/images/top-bar/discord-icon.png"/></a>
+				<!--<a href="" target="_BLANK"><img style="vertical-align: 1px;" src="https://miracle74.com/layouts/miracle/images/top-bar/whats-icon.png"/></a>-->
+				<a href="https://facebook.com/miracle74.online" target="_BLANK"><img style="vertical-align: 1px;" src="https://miracle74.com/layouts/miracle/images/top-bar/face-icon.png"/></a>
+			</div>
+		</div>
+	</div>
+	<div id="ArtworkHelper" style="background-image:url(https://miracle74.com/layouts/miracle/images/background_v4.png);">
+		<div class="body-container">
+			<img id="TibiaLogoArtworkTop" src="https://miracle74.com/layouts/miracle/images/logo_3.png" alt="logoartwork" onClick="window.location = '?subtopic=latestnews';">
+			<div id="ContentRow" class="clearfix">
+				<div id="MenuColumn">
+        			<div id='news' class='menuitem'>
+        				<span onClick="MenuItemAction('news')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-news.gif);"></div>
+        						<div id='news_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-news.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='news_Submenu' class='Submenu'>
+	    					<a href="?subtopic=latestnews">
+	    						<div id='submenu_latestnews'>
+	    							<div class='SubmenuitemLabel'>Latest News<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=archive">
+	    						<div id='submenu_archive'>
+	    							<div class='SubmenuitemLabel'>News Archive<div class="separator"></div></div>
+	    						</div>
+	    					</a>	 
+	    				</div>
+        			</div>
+        			<div id='account' class='menuitem'>
+        				<span onClick="MenuItemAction('account')">
+        					<div class='MenuButton' style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);">
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-account.gif);"></div>
+        						<div id='account_Label' class='menu-label' style="left: 44px; background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-account.png);"></div>
+        					</div>
+        				</span>
+	    				<div id='account_Submenu' class='Submenu'>
+	    					<a href="?subtopic=accountmanagement">
+	    						<div id='submenu_accountmanagement'>
+	    							<div class='SubmenuitemLabel'>Account Management<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=createaccount">
+	    						<div id='submenu_createaccount'>
+	    							<div class='SubmenuitemLabel'>Create Account<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=downloads">
+	    						<div id='submenu_downloads'>
+	    							<div class='SubmenuitemLabel'>Downloads<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=lostaccount">
+	    						<div id='submenu_lostaccount'>
+	    							<div class='SubmenuitemLabel'>Lost Account?<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='community' class='menuitem'>
+        				<span onClick="MenuItemAction('community')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-community.png);"></div>
+        						<div id='community_Label' class='menu-label' style="left: 44px; background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-community.png);"></div>
+        					</div>
+        				</span>
+	    				<div id='community_Submenu' class='Submenu'>
+	    					<a href="?subtopic=characters">
+	    						<div id='submenu_characters'>
+	    							<div class='SubmenuitemLabel'>Characters<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=whoisonline">
+	    						<div id='submenu_whoisonline'>
+	    							<div class='SubmenuitemLabel'>Who Is Online?<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=highscores">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Highscores<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=powergamers">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Powergamers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+                            <a href="?subtopic=insomniacs">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Insomniacs<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+                            <a href="?subtopic=killers">
+	    						<div id='submenu_killers'>
+	    							<div class='SubmenuitemLabel'>Killers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=killstatistics">
+	    						<div id='submenu_killstatistics'>
+	    							<div class='SubmenuitemLabel'>Kill Statistics<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=latestdeaths">
+	    						<div id='submenu_latestdeaths'>
+	    							<div class='SubmenuitemLabel'>Latest Deaths<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=bans">
+	    						<div id='submenu_killstatistics'>
+	    							<div class='SubmenuitemLabel'>Banishments<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=houses">
+	    						<div id='submenu_houses'>
+	    							<div class='SubmenuitemLabel'>Houses<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=guilds">
+	    						<div id='submenu_guilds'>
+	    							<div class='SubmenuitemLabel'>Guilds<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=wars">
+	    						<div id='submenu_guilds'>
+	    							<div class='SubmenuitemLabel'>Guild Wars<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=streamers">
+	    						<div id='submenu_streamers'>
+	    							<div class='SubmenuitemLabel'>Streamers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='library' class='menuitem'>
+        				<span onClick="MenuItemAction('library')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-library.gif);"></div>
+        						<div id='library_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-library.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='library_Submenu' class='Submenu'>
+	    					<a href="?subtopic=serverinfo">
+	    						<div id='submenu_serverinfo'>
+	    							<div class='SubmenuitemLabel'>Server Info<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=maps">
+	    						<div id='submenu_maps'>
+	    							<div class='SubmenuitemLabel'>Maps<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=gamewiki">
+								<div id='submenu_gamewiki'>
+									<div class='SubmenuitemLabel'>Game Wiki<div class="separator"></div></div>
+								</div>
+							</a>
+	    					<a href="?subtopic=experiencetable">
+								<div id='submenu_experiencetable'>
+									<div class='SubmenuitemLabel'>Experience Table<div class="separator"></div></div>
+								</div>
+							</a>
+	    				</div>
+        			</div>
+        			<div id='support' class='menuitem'>
+        				<span onClick="MenuItemAction('support')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-support.gif);"></div>
+        						<div id='support_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-support.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='support_Submenu' class='Submenu'>
+	    					<a href="?subtopic=aboutus">
+	    						<div id='submenu_aboutus'>
+	    							<div class='SubmenuitemLabel'>About Us<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=faq">
+	    						<div id='submenu_faq'>
+	    							<div class='SubmenuitemLabel'>FAQ<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=rules">
+	    						<div id='submenu_rules'>
+	    							<div class='SubmenuitemLabel'>Rules<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=referral">
+	    						<div id='submenu_referral'>
+	    							<div class='SubmenuitemLabel'>Referral<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=premium">
+	    						<div id='submenu_premium'>
+	    							<div class='SubmenuitemLabel'>Premium<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='shop' class='menuitem'>
+        				<span onClick="MenuItemAction('shop')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-shops.gif);"></div>
+        						<div id='shop_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-shop.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='shop_Submenu' class='Submenu'>
+	    					<a href="?subtopic=donate">
+	    						<div id='submenu_donate'>
+	    							<div class='SubmenuitemLabel'>Donate<div class="separator"></div></div>
+	    						</div>
+	    					</a>	 
+	    					<a href="?subtopic=store">
+	    						<div id='submenu_store'>
+	    							<div class='SubmenuitemLabel'>Store<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+				</div>
+				<div id="ContentColumn">
+										<div class="box-container" id="highscores">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/content/content-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/content/headline-4/headline-highscores.png'>
+						</div>
+						<div class="content">
+							
+<div class="TableTopHeader">
+	<span class="title">Highscores Filters</span>
+</div>
+<form method="post" action="?subtopic=highscores">
+<div class="BoxContentContainer">
+    <table class="TableContent" width="100%">
+    	<tr>
+    		<td style="width:5%;">
+    			Vocation:
+    		</td>
+    		<td>
+    			<select name="vocation"><option value="">(all)</option><option value="0" >No Vocation</option><option value="1" >Sorcerers</option><option value="2" >Druids</option><option value="3" >Paladins</option><option value="4" >Knights</option></select>
+    		</td>
+    		<td style="width:5%;">
+				Category:
+			</td>
+			<td style="width:45%;">
+				<select name="list"><option value="axe" >Axe Fighting</option><option value="club" >Club Fighting</option><option value="dist" >Distance Fighting</option><option value="experience" selected>Experience</option><option value="fishing" >Fishing</option><option value="fist" >Fist Fighting</option><option value="maglevel" >Magic Level</option><option value="shielding" >Shielding</option><option value="sword" >Sword Fighting</option></select></td>
+			</td>
+    		<td style="width:1%;">
+				<input class="InputButton" type="submit" value="Submit" alt="submit"/>
+			</td>
+    	</tr>
+    </table>
+</div></form><br>
+<div class="BoxContentContainer">
+    <table class="TableContent InnerBorder" width="100%">
+    	<tr bgcolor="#1e1e1e">
+    		<td style="width:1%;" class="LabelV">Rank</td>
+    		<td style="width:1%;" class="LabelV"></td>
+			<td style="width:40%;" class="LabelV">Name</td>
+			<td class="LabelV">Vocation</td>
+			<td class="LabelV">Level</td>
+			<td style="width:20%;" class="LabelV">Experience</td>
+		</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">1</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Joaquin">Joaquin</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>157</td>
+				<td>62837941</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">2</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Horsao">Horsao</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>149</td>
+				<td>53229972</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">3</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Headshot">Headshot</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>148</td>
+				<td>51927751</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">4</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Gecko">Gecko</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>144</td>
+				<td>48223624</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">5</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Kashi+Incansavel">Kashi Incansavel</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>139</td>
+				<td>43200659</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">6</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=True+Damage">True Damage</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>135</td>
+				<td>39523095</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">7</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Shajkan">Shajkan</a></b>
+				</td>
+				<td>Elder Druid</td>
+				<td>131</td>
+				<td>36396648</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">8</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Jamal">Jamal</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>130</td>
+				<td>35037742</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">9</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dsn">Dsn</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>128</td>
+				<td>33573662</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">10</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/au.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Rich">Rich</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>128</td>
+				<td>33484912</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">11</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Shiak">Shiak</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>125</td>
+				<td>31102348</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">12</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pr.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Klepto">Klepto</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>124</td>
+				<td>30895682</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">13</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Cracked">Cracked</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>124</td>
+				<td>30290809</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">14</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/af.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Creepy+Nugget">Creepy Nugget</a></b>
+				</td>
+				<td>Elder Druid</td>
+				<td>123</td>
+				<td>30037392</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">15</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/es.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Gnz">Gnz</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>118</td>
+				<td>26047313</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">16</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Creepy">Creepy</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>114</td>
+				<td>23986131</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">17</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Nariz">Nariz</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>113</td>
+				<td>22997058</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">18</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Garrosh+Hellscream">Garrosh Hellscream</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>112</td>
+				<td>22253767</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">19</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Owneds">Owneds</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>111</td>
+				<td>22023643</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">20</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Ak+Trovao">Ak Trovao</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>111</td>
+				<td>21926652</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">21</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/au.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Spawn">Spawn</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>111</td>
+				<td>21706503</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">22</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Ursa+Warrior">Ursa Warrior</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>109</td>
+				<td>20774878</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">23</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/gb.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Last+Man">Last Man</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>107</td>
+				<td>19762202</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">24</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Sheq">Sheq</a></b>
+				</td>
+				<td>Elder Druid</td>
+				<td>106</td>
+				<td>19126464</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">25</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Pantera+Negra">Pantera Negra</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>106</td>
+				<td>18897982</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">26</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Elmopri">Elmopri</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>105</td>
+				<td>18597916</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">27</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Gravecrawler">Gravecrawler</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>105</td>
+				<td>18380668</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">28</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/ae.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dredoriuz">Dredoriuz</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>105</td>
+				<td>18221335</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">29</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/it.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Loan+Shark">Loan Shark</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>104</td>
+				<td>17966170</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">30</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Noro">Noro</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>102</td>
+				<td>16808788</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">31</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Lynce">Lynce</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>102</td>
+				<td>16675659</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">32</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/ch.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Domestic+Abuse">Domestic Abuse</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>101</td>
+				<td>16612993</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">33</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Thane+Hur">Thane Hur</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>100</td>
+				<td>16174222</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">34</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dark">Dark</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>99</td>
+				<td>15577620</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">35</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Pastor+Easywar">Pastor Easywar</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>99</td>
+				<td>15385114</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">36</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Recok">Recok</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>98</td>
+				<td>14755808</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">37</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/ae.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Suiiciide+Krono">Suiiciide Krono</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>97</td>
+				<td>14605020</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">38</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Xeberus">Xeberus</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>97</td>
+				<td>14480346</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">39</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Cody+Tyer">Cody Tyer</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>97</td>
+				<td>14408071</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">40</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Guuh+Zikaah">Guuh Zikaah</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>96</td>
+				<td>14192109</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">41</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Terrorista">Terrorista</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>95</td>
+				<td>13416447</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">42</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Gollum">Gollum</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>94</td>
+				<td>13358810</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">43</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dualipa">Dualipa</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>94</td>
+				<td>13315968</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">44</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/kr.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Delicato">Delicato</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>94</td>
+				<td>13208946</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">45</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Hetsig">Hetsig</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>94</td>
+				<td>13073563</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">46</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dulokz">Dulokz</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>93</td>
+				<td>12889009</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">47</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Digozerah+Bomba+Um">Digozerah Bomba Um</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>93</td>
+				<td>12728359</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">48</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Drunk+Garden">Drunk Garden</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>91</td>
+				<td>12074601</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">49</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Home+Depot">Home Depot</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>91</td>
+				<td>12050836</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">50</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/es.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Bill+Cipher">Bill Cipher</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>90</td>
+				<td>11377846</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">51</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Daredevilry">Daredevilry</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>89</td>
+				<td>11350541</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">52</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Kapten+Kuk">Kapten Kuk</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>89</td>
+				<td>11296591</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">53</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/cx.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Egmaraes">Egmaraes</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>88</td>
+				<td>10857961</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">54</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/de.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Spring">Spring</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>88</td>
+				<td>10825938</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">55</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Bellatrix+Lestrange">Bellatrix Lestrange</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>88</td>
+				<td>10792384</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">56</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Leviathan">Leviathan</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>87</td>
+				<td>10590082</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">57</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Tellytubbie">Tellytubbie</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>87</td>
+				<td>10397919</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">58</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/ve.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Vekomi">Vekomi</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>87</td>
+				<td>10388931</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">59</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Picolli">Picolli</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>86</td>
+				<td>10144149</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">60</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Toru">Toru</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>86</td>
+				<td>10031869</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">61</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Brotherlong">Brotherlong</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>86</td>
+				<td>10028551</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">62</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Smol+King">Smol King</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>86</td>
+				<td>9982561</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">63</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Octopus+Head">Octopus Head</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>86</td>
+				<td>9954249</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">64</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Dom+Kodex">Dom Kodex</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>86</td>
+				<td>9949985</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">65</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Waydone">Waydone</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>85</td>
+				<td>9784406</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">66</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Wayon">Wayon</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>85</td>
+				<td>9616316</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">67</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Big+Axe+Brian">Big Axe Brian</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>84</td>
+				<td>9446586</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">68</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Loirox">Loirox</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>84</td>
+				<td>9347682</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">69</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Pagodim">Pagodim</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>84</td>
+				<td>9289321</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">70</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Zwyrol">Zwyrol</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>83</td>
+				<td>9173504</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">71</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Tomy+Hank">Tomy Hank</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>83</td>
+				<td>9009076</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">72</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/il.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Zyeszk">Zyeszk</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>83</td>
+				<td>8907774</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">73</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Triggah">Triggah</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>82</td>
+				<td>8624912</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">74</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/se.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Sidestep+Paralyze">Sidestep Paralyze</a></b>
+				</td>
+				<td>Elder Druid</td>
+				<td>82</td>
+				<td>8542561</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">75</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/nl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Calone">Calone</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>81</td>
+				<td>8484180</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">76</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Bon+Para">Bon Para</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>81</td>
+				<td>8451031</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">77</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Magic+Zuk">Magic Zuk</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>81</td>
+				<td>8438563</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">78</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/rw.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Coyoc%27tane">Coyoc'tane</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>81</td>
+				<td>8423269</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">79</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/aw.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=David+Grohl">David Grohl</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>81</td>
+				<td>8391980</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">80</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Thalling">Thalling</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>81</td>
+				<td>8371118</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">81</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Xeidy+Problema">Xeidy Problema</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>81</td>
+				<td>8355285</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">82</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/es.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Fiddlediddle">Fiddlediddle</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>81</td>
+				<td>8292905</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">83</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Merra+Olia">Merra Olia</a></b>
+				</td>
+				<td>Elder Druid</td>
+				<td>81</td>
+				<td>8254528</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">84</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Arespartax">Arespartax</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>81</td>
+				<td>8236608</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">85</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/es.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Hayven">Hayven</a></b>
+				</td>
+				<td>Sorcerer</td>
+				<td>80</td>
+				<td>8145153</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">86</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Doom">Doom</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>80</td>
+				<td>8109552</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">87</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Ateon%27Knight">Ateon'Knight</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>80</td>
+				<td>7935570</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">88</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Zordon">Zordon</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>79</td>
+				<td>7880955</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">89</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/gb.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Gooch+Tumour">Gooch Tumour</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>79</td>
+				<td>7880270</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">90</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Papiez+Zawadiaka">Papiez Zawadiaka</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>79</td>
+				<td>7812157</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">91</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Seuku+Myadora">Seuku Myadora</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>79</td>
+				<td>7725010</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">92</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Sir+Ham">Sir Ham</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>79</td>
+				<td>7662933</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">93</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Negroni">Negroni</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>79</td>
+				<td>7619529</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">94</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Bort+The+Cord">Bort The Cord</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>78</td>
+				<td>7551709</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">95</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/us.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Ron+Para">Ron Para</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>78</td>
+				<td>7506439</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">96</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Slomerpica">Slomerpica</a></b>
+				</td>
+				<td>Master Sorcerer</td>
+				<td>78</td>
+				<td>7480227</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">97</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Duckzera">Duckzera</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>78</td>
+				<td>7428342</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">98</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/pl.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Toniemy">Toniemy</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>78</td>
+				<td>7418806</td>
+			</tr>
+			<tr bgcolor="#22282c">
+				<td style="text-align:left">99</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/za.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Divine+Inspiration">Divine Inspiration</a></b>
+				</td>
+				<td>Royal Paladin</td>
+				<td>78</td>
+				<td>7349865</td>
+			</tr>
+			<tr bgcolor="#1e1e1e">
+				<td style="text-align:left">100</td>
+				<td>
+					<img src="https://miracle74.com/images/flags/br.gif" style="vertical-align:-1px;"> 	
+				</td>
+				
+				<td>
+				<b><a href="?subtopic=characters&name=Pai+Muttas">Pai Muttas</a></b>
+				</td>
+				<td>Elite Knight</td>
+				<td>77</td>
+				<td>7200049</td>
+			</tr>
+    </table>
+</div>
+<div style="padding: 4px 2px;margin: 5px 0px 15px 0px;font-size: 11px;">
+	<div style="float: left;">
+		<b>&#187 Pages: 1  <a href="?subtopic=highscores&list=experience&page=2&vocation="">2</a> <a href="?subtopic=highscores&list=experience&page=3&vocation="">3</a> <a href="?subtopic=highscores&list=experience&page=4&vocation="">4</a> <a href="?subtopic=highscores&list=experience&page=5&vocation="">5</a> <a href="?subtopic=highscores&list=experience&page=6&vocation="">6</a> <a href="?subtopic=highscores&list=experience&page=7&vocation="">7</a> <a href="?subtopic=highscores&list=experience&page=8&vocation="">8</a> <a href="?subtopic=highscores&list=experience&page=9&vocation="">9</a> <a href="?subtopic=highscores&list=experience&page=10&vocation="">10</a></b>
+	</div>
+	<div style="float: right;">
+		<b>&#187 Results: 1000</b>
+	</div>
+</div>						</div>
+					</div>
+					<div id="Footer">
+												Copyright by Miracle 2024. All rights reserved.<br/>
+						<div style="margin-top: 3px;" class="termslinks">
+							<a href="?subtopic=serviceagreement">Service Agreement</a> |
+							<a href="?subtopic=privacypolice">Privacy Police</a>
+						</div>
+				  	</div>
+				</div>
+				<div id="RightColumn">
+					<div class="box-container" id="StatusBox">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-serverstatus.png'>
+						</div>
+						<div class="content">
+							<div class="status" onClick="window.location='?subtopic=whoisonline'">
+                                									<span class="playersNumber">892 Players Online</span>
+															</div>
+							<!--<div style="text-align:center;font-weight:bold;margin-top: 10px;">Official Launch In:</div>
+							<div class="countdown-container">
+								<div style="display: inline-block;">
+									<span id="days">00</span><span id="days-text">d</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="hours">00</span><span id="hours-text">h</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="minutes">00</span><span id="minutes-text">m</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="seconds">00</span><span id="seconds-text">s</span>
+								</div>
+							</div>
+							<div class="started">
+								Miracle has started!
+							</div>-->
+							<span class="serverInfo">
+								Server Save: <span id="ClockDisplay">00:00:00</span>
+															</span>
+						</div>
+					</div>
+					<div class="box-container" id="Powergamers">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-powergamers.png'>
+						</div>
+												
+													<div class="powergamers">
+								
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Joaquin">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=152&head=12&body=49&legs=14&feet=0&addons=2">
+								</div>
+								<div class="info">
+									<span class="name">1 - Joaquin</span>
+									<span class="levelvoc"><span class="level">157,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+1kk</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox light">
+								<a href="?subtopic=characters&name=Rich">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=281&head=88&body=79&legs=88&feet=94&addons=3">
+								</div>
+								<div class="info">
+									<span class="name">2 - Rich</span>
+									<span class="levelvoc"><span class="level">128,</span> <span class="vocation">Elite Knight</span><span class="exp"><b>+738k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Cracked">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=128&head=1&body=57&legs=57&feet=94&addons=0">
+								</div>
+								<div class="info">
+									<span class="name">3 - Cracked</span>
+									<span class="levelvoc"><span class="level">124,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+654k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox light">
+								<a href="?subtopic=characters&name=Windrunner">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=156&head=94&body=94&legs=114&feet=94&addons=3">
+								</div>
+								<div class="info">
+									<span class="name">4 - Windrunner</span>
+									<span class="levelvoc"><span class="level">70,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+532k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Klepto">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=131&head=114&body=114&legs=114&feet=114&addons=0">
+								</div>
+								<div class="info">
+									<span class="name">5 - Klepto</span>
+									<span class="levelvoc"><span class="level">124,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+507k</b> xp</span></span>
+								</div>
+								</a>
+							</div>							</div>
+											</div>
+					<div class="box-container" id="Streamers">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline-streamers" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-streamers.png'>
+						</div>
+													<a class="linkButton" href="https://twitch.tv/MarioJrB2K" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1aa1df6c-2c44-4b15-91e3-e0e2c3ff8c12-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>MarioJrB2K</b></span>
+										<span class="viewers">Viewers: 14</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/bonistv420" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/34a0c800-f3e7-4bb4-87e3-80abd3be4c6d-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>bonistv420</b></span>
+										<span class="viewers">Viewers: 8</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/grorktv" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d97792dc-80cf-4e63-bd79-1297792be191-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>grorktv</b></span>
+										<span class="viewers">Viewers: 4</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/RyakePlay" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c8c56550-39c6-4b07-bee6-7e5f92387cfa-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>RyakePlay</b></span>
+										<span class="viewers">Viewers: 2</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/que_angustia" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/84823a65-a82d-455c-a75b-a2260576b946-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>que_angustia</b></span>
+										<span class="viewers">Viewers: 1</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+																		<center><a href="?subtopic=streamers"><span class="button">View All</span></a></center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    	<script type='text/javascript'>InitializePage();</script>
+	<script src="https://miracle74.com/layouts/miracle/js/flickity.pkgd.min.js"></script>
+	<script>
+	  $(document).ready(function() {
+		var $carousel = $('.flickity-carousel').flickity({
+		  prevNextButtons: false,
+		  wrapAround: true,
+		  imagesLoaded: true,
+		  lazyLoad: 10,
+		  setGallerySize: false,
+		  cellAlign: 'left',
+		  autoPlay: true,
+		  pauseAutoPlayOnHover: false,
+		});
+
+		var flkty = $carousel.data('flickity');
+		$carousel.on('dragStart.flickity', function() {
+		  flkty.pausePlayer();
+		});
+
+		function restartAutoPlay() {
+		  if (!flkty.player.isPlaying) {
+		    flkty.playPlayer();
+		  }
+		}
+
+		$carousel.on('dragEnd.flickity', function() {
+		  restartAutoPlay();
+		});
+	  });
+	</script>
+	<script src="https://miracle74.com/layouts/miracle/js/countdown_v9.js"></script>
+	<script>
+		//updateCountdown();
+		var serverTime = 1731779322;
+    	var targetTime = 1731830400;
+		updateServerSave(serverTime, targetTime);
+	</script>
+</body>
+</html>
