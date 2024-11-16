@@ -1,0 +1,544 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Accountmanagement - Miracle</title>
+	<meta name="description" content="Miracle is an Alternative Tibia Server 7.4 free to play and massive multiplayer online role playing game (MMORPG)." />
+	<meta name="author" content="Kanohn" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" content="tibia, tibia 7.4, otserv, free online game, free multiplayer game, ots, open tibia server" />
+	<link rel="shortcut icon" href="https://miracle74.com/layouts/miracle/images/favicon.png" type="image/png">
+	<script type='text/javascript'>
+function GetXmlHttpObject()
+{
+var xmlHttp=null;
+try
+  {
+  xmlHttp=new XMLHttpRequest();
+  }
+catch (e)
+  {
+  try
+    {
+    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+    }
+  catch (e)
+    {
+    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  }
+return xmlHttp;
+}
+
+function MouseOverBigButton(source)
+{
+  source.firstChild.style.visibility = "visible";
+}
+function MouseOutBigButton(source)
+{
+  source.firstChild.style.visibility = "hidden";
+}
+function BigButtonAction(path)
+{
+  window.location = path;
+}
+varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';  var IMAGES=0; IMAGES='https://miracle74.com/layouts/miracle/images'; var LINK_ACCOUNT=0; LINK_ACCOUNT='https://miracle74.com';</script>	<link href="https://miracle74.com/layouts/miracle/basic_v12.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://miracle74.com/layouts/miracle/flickity.css" media="screen">
+	<script type='text/javascript'> var IMAGES=0; IMAGES='https://miracle74.com/layouts/miracle/images'; var g_FormField='';  var LINK_ACCOUNT=0; LINK_ACCOUNT='';</script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/initialize.js"></script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/js/jquery-3.6.4.js"></script>
+	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/generic_v2.js"></script>
+	<!-- Meta Pixel Code -->
+	<!-- <script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1637663457003619');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1637663457003619&ev=PageView&noscript=1"
+	/></noscript>-->
+	<!-- End Meta Pixel Code -->
+</head>
+<body onBeforeUnLoad="SaveMenu();" onUnload="SaveMenu();">
+	<div class="top-bar">
+		<div class="menu">
+			<span class="title"><a href="?subtopic=latestnews">Welcome to <b>Miracle!</b></a></span>
+			<div class="separator"></div>
+			<div class="links">  <!-- !Check if href works -->
+				<a href="?subtopic=createaccount">Create Account</a>
+				<a href="?subtopic=downloads">Download</a>
+				<a href="?subtopic=aboutus">About Us</a>
+				<a href="?subtopic=serverinfo">Server Info</a>
+				<a href="?subtopic=gamewiki">Game Wiki</a>
+				<a href="?subtopic=casts">Casts</a>
+				<a href="?subtopic=premium">Premium</a>
+				<a href="?subtopic=donate"><span class="donate">Donate</span></a>
+			</div>
+			<div class="social">
+				<a href="https://discord.gg/Vw2mR6trHb" target="_BLANK"><img style="vertical-align: -2px;" src="https://miracle74.com/layouts/miracle/images/top-bar/discord-icon.png"/></a>
+				<!--<a href="" target="_BLANK"><img style="vertical-align: 1px;" src="https://miracle74.com/layouts/miracle/images/top-bar/whats-icon.png"/></a>-->
+				<a href="https://facebook.com/miracle74.online" target="_BLANK"><img style="vertical-align: 1px;" src="https://miracle74.com/layouts/miracle/images/top-bar/face-icon.png"/></a>
+			</div>
+		</div>
+	</div>
+	<div id="ArtworkHelper" style="background-image:url(https://miracle74.com/layouts/miracle/images/background_v4.png);">
+		<div class="body-container">
+			<img id="TibiaLogoArtworkTop" src="https://miracle74.com/layouts/miracle/images/logo_3.png" alt="logoartwork" onClick="window.location = '?subtopic=latestnews';">
+			<div id="ContentRow" class="clearfix">
+				<div id="MenuColumn">
+        			<div id='news' class='menuitem'>
+        				<span onClick="MenuItemAction('news')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-news.gif);"></div>
+        						<div id='news_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-news.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='news_Submenu' class='Submenu'>
+	    					<a href="?subtopic=latestnews">
+	    						<div id='submenu_latestnews'>
+	    							<div class='SubmenuitemLabel'>Latest News<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=archive">
+	    						<div id='submenu_archive'>
+	    							<div class='SubmenuitemLabel'>News Archive<div class="separator"></div></div>
+	    						</div>
+	    					</a>	 
+	    				</div>
+        			</div>
+        			<div id='account' class='menuitem'>
+        				<span onClick="MenuItemAction('account')">
+        					<div class='MenuButton' style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);">
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-account.gif);"></div>
+        						<div id='account_Label' class='menu-label' style="left: 44px; background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-account.png);"></div>
+        					</div>
+        				</span>
+	    				<div id='account_Submenu' class='Submenu'>
+	    					<a href="?subtopic=accountmanagement">
+	    						<div id='submenu_accountmanagement'>
+	    							<div class='SubmenuitemLabel'>Account Management<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=createaccount">
+	    						<div id='submenu_createaccount'>
+	    							<div class='SubmenuitemLabel'>Create Account<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=downloads">
+	    						<div id='submenu_downloads'>
+	    							<div class='SubmenuitemLabel'>Downloads<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=lostaccount">
+	    						<div id='submenu_lostaccount'>
+	    							<div class='SubmenuitemLabel'>Lost Account?<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='community' class='menuitem'>
+        				<span onClick="MenuItemAction('community')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-community.png);"></div>
+        						<div id='community_Label' class='menu-label' style="left: 44px; background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-community.png);"></div>
+        					</div>
+        				</span>
+	    				<div id='community_Submenu' class='Submenu'>
+	    					<a href="?subtopic=characters">
+	    						<div id='submenu_characters'>
+	    							<div class='SubmenuitemLabel'>Characters<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=whoisonline">
+	    						<div id='submenu_whoisonline'>
+	    							<div class='SubmenuitemLabel'>Who Is Online?<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=highscores">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Highscores<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=powergamers">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Powergamers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+                            <a href="?subtopic=insomniacs">
+	    						<div id='submenu_highscores'>
+	    							<div class='SubmenuitemLabel'>Insomniacs<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+                            <a href="?subtopic=killers">
+	    						<div id='submenu_killers'>
+	    							<div class='SubmenuitemLabel'>Killers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=killstatistics">
+	    						<div id='submenu_killstatistics'>
+	    							<div class='SubmenuitemLabel'>Kill Statistics<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=latestdeaths">
+	    						<div id='submenu_latestdeaths'>
+	    							<div class='SubmenuitemLabel'>Latest Deaths<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=bans">
+	    						<div id='submenu_killstatistics'>
+	    							<div class='SubmenuitemLabel'>Banishments<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=houses">
+	    						<div id='submenu_houses'>
+	    							<div class='SubmenuitemLabel'>Houses<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=guilds">
+	    						<div id='submenu_guilds'>
+	    							<div class='SubmenuitemLabel'>Guilds<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=wars">
+	    						<div id='submenu_guilds'>
+	    							<div class='SubmenuitemLabel'>Guild Wars<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=streamers">
+	    						<div id='submenu_streamers'>
+	    							<div class='SubmenuitemLabel'>Streamers<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='library' class='menuitem'>
+        				<span onClick="MenuItemAction('library')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-library.gif);"></div>
+        						<div id='library_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-library.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='library_Submenu' class='Submenu'>
+	    					<a href="?subtopic=serverinfo">
+	    						<div id='submenu_serverinfo'>
+	    							<div class='SubmenuitemLabel'>Server Info<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=maps">
+	    						<div id='submenu_maps'>
+	    							<div class='SubmenuitemLabel'>Maps<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=gamewiki">
+								<div id='submenu_gamewiki'>
+									<div class='SubmenuitemLabel'>Game Wiki<div class="separator"></div></div>
+								</div>
+							</a>
+	    					<a href="?subtopic=experiencetable">
+								<div id='submenu_experiencetable'>
+									<div class='SubmenuitemLabel'>Experience Table<div class="separator"></div></div>
+								</div>
+							</a>
+	    				</div>
+        			</div>
+        			<div id='support' class='menuitem'>
+        				<span onClick="MenuItemAction('support')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-support.gif);"></div>
+        						<div id='support_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-support.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='support_Submenu' class='Submenu'>
+	    					<a href="?subtopic=aboutus">
+	    						<div id='submenu_aboutus'>
+	    							<div class='SubmenuitemLabel'>About Us<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=faq">
+	    						<div id='submenu_faq'>
+	    							<div class='SubmenuitemLabel'>FAQ<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=rules">
+	    						<div id='submenu_rules'>
+	    							<div class='SubmenuitemLabel'>Rules<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=referral">
+	    						<div id='submenu_referral'>
+	    							<div class='SubmenuitemLabel'>Referral<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    					<a href="?subtopic=premium">
+	    						<div id='submenu_premium'>
+	    							<div class='SubmenuitemLabel'>Premium<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+        			<div id='shop' class='menuitem'>
+        				<span onClick="MenuItemAction('shop')">
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
+        						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-shops.gif);"></div>
+        						<div id='shop_Label' class='menu-label' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-shop.png);'></div>
+        					</div>
+        				</span>
+	    				<div id='shop_Submenu' class='Submenu'>
+	    					<a href="?subtopic=donate">
+	    						<div id='submenu_donate'>
+	    							<div class='SubmenuitemLabel'>Donate<div class="separator"></div></div>
+	    						</div>
+	    					</a>	 
+	    					<a href="?subtopic=store">
+	    						<div id='submenu_store'>
+	    							<div class='SubmenuitemLabel'>Store<div class="separator"></div></div>
+	    						</div>
+	    					</a>
+	    				</div>
+        			</div>
+				</div>
+				<div id="ContentColumn">
+										<div class="box-container" id="accountmanagement">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/content/content-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/content/headline-4/headline-accountmanagement.png'>
+						</div>
+						<div class="content">
+							
+		Please enter your account name and your password.<br/><a href="?subtopic=createaccount"><b>Create an account</b></a> if you do not have one yet.<br/><br/>
+		<div class="TableTopHeader">Account Login</div>
+		<form action="?subtopic=donate" method="post" name="AccountLoginForm" id="LoginForm">
+		<div class="BoxContentContainer">
+			<table class="Table13" width="100%">
+			    <tbody>
+			        <tr class="LoginTable">
+			            <td>
+			                <div class="LoginBox">
+			                    <div class="Cell LabelV120" style="width: 20%;"><b>Account Name:</b></div>
+			                    <div class="Cell InputField"><input type="password" name="account_login" maxlength="50" style="width: 45%;"></div>
+			                    <div class="Break"></div>
+			                    <div class="Cell LabelV120"><span><b>Password:</b></span></div>
+			                    <div class="Cell InputField"><input type="password" name="password_login" maxlength="29" style="width: 45%;"></div>
+		                    	 	<div class="Break"></div>
+		                    	 	<div class="Cell LabelV120"><span><b>Verification:</b></span></div>
+			                    	<div class="Cell InputField"><div style="width: 45%; margin-top: 5px;" class="g-recaptcha" data-theme="light" data-sitekey="6Lc_xdwpAAAAAJxQ4I8qYD8bM8a3dfcq9mFd0Khi"></div> 
+			                </div>
+			            </td>
+			        </tr>
+			    </tbody>
+			</table>
+		</div><br>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr align="center">
+				<td><input class="InputButton" type="submit" value="Submit" alt="Submit"></td></form>
+				<td><form action="?subtopic=lostaccount" method="post" ><input class="InputButton" type="submit" value="Account Lost?" alt="Account Lost?"></form></td>
+			</tr>
+		</table><script src="https://www.google.com/recaptcha/api.js" async defer></script>						</div>
+					</div>
+					<div id="Footer">
+												Copyright by Miracle 2024. All rights reserved.<br/>
+						<div style="margin-top: 3px;" class="termslinks">
+							<a href="?subtopic=serviceagreement">Service Agreement</a> |
+							<a href="?subtopic=privacypolice">Privacy Police</a>
+						</div>
+				  	</div>
+				</div>
+				<div id="RightColumn">
+					<div class="box-container" id="StatusBox">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-serverstatus.png'>
+						</div>
+						<div class="content">
+							<div class="status" onClick="window.location='?subtopic=whoisonline'">
+                                									<span class="playersNumber">903 Players Online</span>
+															</div>
+							<!--<div style="text-align:center;font-weight:bold;margin-top: 10px;">Official Launch In:</div>
+							<div class="countdown-container">
+								<div style="display: inline-block;">
+									<span id="days">00</span><span id="days-text">d</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="hours">00</span><span id="hours-text">h</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="minutes">00</span><span id="minutes-text">m</span>
+								</div>
+								<div style="display: inline-block;">
+									<span id="seconds">00</span><span id="seconds-text">s</span>
+								</div>
+							</div>
+							<div class="started">
+								Miracle has started!
+							</div>-->
+							<span class="serverInfo">
+								Server Save: <span id="ClockDisplay">00:00:00</span>
+															</span>
+						</div>
+					</div>
+					<div class="box-container" id="Powergamers">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-powergamers.png'>
+						</div>
+												
+													<div class="powergamers">
+								
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Joaquin">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=152&head=12&body=49&legs=14&feet=0&addons=2">
+								</div>
+								<div class="info">
+									<span class="name">1 - Joaquin</span>
+									<span class="levelvoc"><span class="level">157,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+1kk</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox light">
+								<a href="?subtopic=characters&name=Rich">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=281&head=88&body=79&legs=88&feet=94&addons=3">
+								</div>
+								<div class="info">
+									<span class="name">2 - Rich</span>
+									<span class="levelvoc"><span class="level">128,</span> <span class="vocation">Elite Knight</span><span class="exp"><b>+738k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Klepto">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=131&head=114&body=114&legs=114&feet=114&addons=0">
+								</div>
+								<div class="info">
+									<span class="name">3 - Klepto</span>
+									<span class="levelvoc"><span class="level">125,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+674k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox light">
+								<a href="?subtopic=characters&name=Cracked">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=128&head=1&body=57&legs=57&feet=94&addons=0">
+								</div>
+								<div class="info">
+									<span class="name">4 - Cracked</span>
+									<span class="levelvoc"><span class="level">124,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+654k</b> xp</span></span>
+								</div>
+								</a>
+							</div>
+							<div class="playerBox dark">
+								<a href="?subtopic=characters&name=Shajkan">
+								<div class="outfit">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=131&head=79&body=94&legs=85&feet=91&addons=0">
+								</div>
+								<div class="info">
+									<span class="name">5 - Shajkan</span>
+									<span class="levelvoc"><span class="level">131,</span> <span class="vocation">Elder Druid</span><span class="exp"><b>+619k</b> xp</span></span>
+								</div>
+								</a>
+							</div>							</div>
+											</div>
+					<div class="box-container" id="Streamers">
+						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/right-panels/right-panel-top-header.png);'>
+							<img class="headline-streamers" src='https://miracle74.com/layouts/miracle/images/right-panels/3/label-streamers.png'>
+						</div>
+													<a class="linkButton" href="https://twitch.tv/jaou1" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/dc230af1-f417-4d1f-9588-fdde39d815f1-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>jaou1</b></span>
+										<span class="viewers">Viewers: 56</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/bonistv420" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/34a0c800-f3e7-4bb4-87e3-80abd3be4c6d-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>bonistv420</b></span>
+										<span class="viewers">Viewers: 9</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/RyakePlay" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c8c56550-39c6-4b07-bee6-7e5f92387cfa-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>RyakePlay</b></span>
+										<span class="viewers">Viewers: 1</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/que_angustia" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/84823a65-a82d-455c-a75b-a2260576b946-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>que_angustia</b></span>
+										<span class="viewers">Viewers: 1</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+																		<center><a href="?subtopic=streamers"><span class="button">View All</span></a></center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    	<script type='text/javascript'>InitializePage();</script>
+	<script src="https://miracle74.com/layouts/miracle/js/flickity.pkgd.min.js"></script>
+	<script>
+	  $(document).ready(function() {
+		var $carousel = $('.flickity-carousel').flickity({
+		  prevNextButtons: false,
+		  wrapAround: true,
+		  imagesLoaded: true,
+		  lazyLoad: 10,
+		  setGallerySize: false,
+		  cellAlign: 'left',
+		  autoPlay: true,
+		  pauseAutoPlayOnHover: false,
+		});
+
+		var flkty = $carousel.data('flickity');
+		$carousel.on('dragStart.flickity', function() {
+		  flkty.pausePlayer();
+		});
+
+		function restartAutoPlay() {
+		  if (!flkty.player.isPlaying) {
+		    flkty.playPlayer();
+		  }
+		}
+
+		$carousel.on('dragEnd.flickity', function() {
+		  restartAutoPlay();
+		});
+	  });
+	</script>
+	<script src="https://miracle74.com/layouts/miracle/js/countdown_v9.js"></script>
+	<script>
+		//updateCountdown();
+		var serverTime = 1731787870;
+    	var targetTime = 1731830400;
+		updateServerSave(serverTime, targetTime);
+	</script>
+</body>
+</html>
