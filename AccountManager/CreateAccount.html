@@ -1,8 +1,7 @@
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Accountmanagement - Miracle</title>
+	<title>Createaccount - Miracle</title>
 	<meta name="description" content="Miracle is an Alternative Tibia Server 7.4 free to play and massive multiplayer online role playing game (MMORPG)." />
 	<meta name="author" content="Kanohn" />
 	<meta http-equiv="content-language" content="en" />
@@ -43,7 +42,7 @@ function BigButtonAction(path)
 {
   window.location = path;
 }
-varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';  var IMAGES=0; IMAGES='https://miracle74.com/https://miracle74.com/layouts/miracle/images'; var LINK_ACCOUNT=0; LINK_ACCOUNT='https://miracle74.com';</script>	<link href="https://miracle74.com/layouts/miracle/basic_v12.css" rel="stylesheet" type="text/css">
+varloginStatus=0; loginStatus='false';var activeSubmenuItem='createaccount';  var IMAGES=0; IMAGES='https://miracle74.com/https://miracle74.com/layouts/miracle/images'; var LINK_ACCOUNT=0; LINK_ACCOUNT='https://miracle74.com';</script>	<link href="https://miracle74.com/layouts/miracle/basic_v12.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://miracle74.com/layouts/miracle/flickity.css" media="screen">
 	<script type='text/javascript'> var IMAGES=0; IMAGES='https://miracle74.com/layouts/miracle/images'; var g_FormField='';  var LINK_ACCOUNT=0; LINK_ACCOUNT='';</script>
 	<script type="text/javascript" src="https://miracle74.com/layouts/miracle/initialize.js"></script>
@@ -70,17 +69,17 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 <body onBeforeUnLoad="SaveMenu();" onUnload="SaveMenu();">
 	<div class="top-bar">
 		<div class="menu">
-			><a href="Index\index.html">Welcome to <b>Miracle!</b></a></span>
+			<span class="title"><a href="Index\index.html">Welcome to <b>Miracle!</b></a></span>
 			<div class="separator"></div>
 			<div class="links">
-			  <a href="AccountManager\CreateAccount.html">Create Account</a>
-			  <a href="https://miracle74.com/?subtopic=downloads">Download</a>
-			  <a href="Support\AboutUs.html">About Us</a>
-			  <a href="ServerLibrary\ServerInfo.html">Server Info</a>
-			  <a href="ServerLibrary\GameWiki.html">Game Wiki</a>
-			  <a href="https://miracle74.com/?subtopic=casts">Casts</a>
-			  <a href="Support\Premium.html">Premium</a>
-			  <a href="Donate\Donate.html"><span class="donate">Donate</span></a>
+                <a href="AccountManager\CreateAccount.html">Create Account</a>
+                <a href="https://miracle74.com/?subtopic=downloads">Download</a>
+                <a href="Support\AboutUs.html">About Us</a>
+                <a href="ServerLibrary\ServerInfo.html">Server Info</a>
+                <a href="ServerLibrary\GameWiki.html">Game Wiki</a>
+                <a href="https://miracle74.com/?subtopic=casts">Casts</a>
+                <a href="Support\Premium.html">Premium</a>
+                <a href="Donate\Donate.html"><span class="donate">Donate</span></a>
 			</div>
 			<div class="social">
 				<a href="https://discord.gg/Vw2mR6trHb" target="_BLANK"><img style="vertical-align: -2px;" src="https://miracle74.com/layouts/miracle/images/top-bar/discord-icon.png"/></a>
@@ -91,7 +90,7 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 	</div>
 	<div id="ArtworkHelper" style="background-image:url(https://miracle74.com/layouts/miracle/images/background_v4.png);">
 		<div class="body-container">
-			<img id="TibiaLogoArtworkTop" src="https://miracle74.com/layouts/miracle/images/logo_3.png" alt="logoartwork" onClick="window.location = 'News.html';">
+			<img id="TibiaLogoArtworkTop" src="https://miracle74.com/layouts/miracle/images/logo_3.png" alt="logoartwork" onClick="window.location = '?subtopic=latestnews';">
 			<div id="ContentRow" class="clearfix">
 				<div id="MenuColumn">
         			<div id='news' class='menuitem'>
@@ -146,7 +145,7 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
         			</div>
         			<div id='community' class='menuitem'>
         				<span onClick="MenuItemAction('community')">
-        					<div class='MenuButton' style='background-image:url(button_background.png);'>
+        					<div class='MenuButton' style='background-image:url(https://miracle74.com/layouts/miracle/images/menu/button_background.png);'>
         						<div class="MenuIcon" style="background-image:url(https://miracle74.com/layouts/miracle/images/menu/icon-community.png);"></div>
         						<div id='community_Label' class='menu-label' style="left: 44px; background-image:url(https://miracle74.com/layouts/miracle/images/menu/4/label-community.png);"></div>
         					</div>
@@ -306,41 +305,125 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
         			</div>
 				</div>
 				<div id="ContentColumn">
-										<div class="box-container" id="accountmanagement">
+										<div class="box-container" id="createaccount">
 						<div class="top-header-background" style='background-image:url(https://miracle74.com/layouts/miracle/images/content/content-top-header.png);'>
-							<img class="headline" src='https://miracle74.com/layouts/miracle/images/content/headline-4/headline-accountmanagement.png'>
+							<img class="headline" src='https://miracle74.com/layouts/miracle/images/content/headline-4/headline-createaccount.png'>
 						</div>
 						<div class="content">
-							
-		Please enter your account name and your password.<br/><a href="?subtopic=createaccount"><b>Create an account</b></a> if you do not have one yet.<br/><br/>
-		<div class="TableTopHeader">Account Login</div>
-		<form action="?subtopic=donate" method="post" name="AccountLoginForm" id="LoginForm">
-		<div class="BoxContentContainer">
-			<table class="Table13" width="100%">
-			    <tbody>
-			        <tr class="LoginTable">
-			            <td>
-			                <div class="LoginBox">
-			                    <div class="Cell LabelV120" style="width: 20%;"><b>Account Name:</b></div>
-			                    <div class="Cell InputField"><input type="password" name="account_login" maxlength="50" style="width: 45%;"></div>
-			                    <div class="Break"></div>
-			                    <div class="Cell LabelV120"><span><b>Password:</b></span></div>
-			                    <div class="Cell InputField"><input type="password" name="password_login" maxlength="29" style="width: 45%;"></div>
-		                    	 	<div class="Break"></div>
-		                    	 	<div class="Cell LabelV120"><span><b>Verification:</b></span></div>
-			                    	<div class="Cell InputField"><div style="width: 45%; margin-top: 5px;" class="g-recaptcha" data-theme="light" data-sitekey="6Lc_xdwpAAAAAJxQ4I8qYD8bM8a3dfcq9mFd0Khi"></div> 
-			                </div>
-			            </td>
-			        </tr>
-			    </tbody>
-			</table>
-		</div><br>
-		<table width="100%" border="0" cellspacing="0" cellpadding="0">
-			<tr align="center">
-				<td><input class="InputButton" type="submit" value="Submit" alt="Submit"></td></form>
-				<td><form action="?subtopic=lostaccount" method="post" ><input class="InputButton" type="submit" value="Account Lost?" alt="Account Lost?"></form></td>
+							<script type="text/javascript" src="https://miracle74.com/layouts/miracle/js/checks.js"></script>
+	<form action="?subtopic=createaccount" onsubmit="return validate_form(this)" method="post" name="CreateAccountAndCharacter" id="CreateAccountAndCharacterForm">
+	<div class="TableTopHeader">
+		<span class="title">Create New Account</span>
+	</div>
+	<div class="BoxContentContainer">
+		<table class="Table11" width=100%>
+			<tr>
+				<td class="LabelV150"><span id="account_label">Account Name:</span></td>
+				<td>
+				    <input id="account_name" class="CreateAccountFormInput" name="reg_name" onkeyup="checkAccount();" onblur="checkAccount(1);" value="" maxlength="50">
+				    <div id="account_indicator" class="InputIndicator" style="background-image: url(https://miracle74.com/layouts/miracle/images/general/nok.gif);"></div>
+				</td>
 			</tr>
-		</table><script src="https://www.google.com/recaptcha/api.js" async defer></script>						</div>
+			<tr>
+				<td></td>
+				<td><span id="acc_name_check" class="FormFieldError"></span></td>
+			</tr>
+			<tr>
+				<td class="LabelV150"><span id="email_label">Email Address:</span></td>
+				<td>
+				    <input id="email" class="CreateAccountFormInput" name="reg_email" onkeyup="checkEmail();" onblur="checkEmail(1);" value="" maxlength="50">
+				    <div id="email_indicator" class="InputIndicator" style="background-image: url(https://miracle74.com/layouts/miracle/images/general/nok.gif);"></div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><span id="email_check" class="FormFieldError"></span></td>
+			</tr>
+			<tr>
+				<td class="LabelV150"><span id="password1_label">Password:</span></td>
+				<td>
+				    <input id="password1" class="CreateAccountFormInput" type="password" name="reg_password1" onkeyup="checkPassword1();" autocomplete="new-password" maxlength="50">
+				    <div id="password1_indicator" class="InputIndicator" style="background-image: url(https://miracle74.com/layouts/miracle/images/general/nok.gif);"></div>		                                                             
+				    <div class="PWStrengthContainer">
+						<div class="PWStrengthToolTip">
+							<div class="HelperDivArrow"></div>
+							<div class="PWRules">
+								<div class="PWStrengthToolTipHeadline">Password Rules</div>
+								<div class="PWRule">
+									<div id="PWRule62" class="InputIndicator InputIndicatorNotOK"></div>
+									The password must have at least 8 and less than 30 chars!
+								</div>
+								<div class="PWRule">
+									<div id="PWRule84" class="InputIndicator InputIndicatorNotOK"></div>
+									The password must contain at least one lower case letter a-z!
+								</div>
+								<div class="PWRule">
+									<div id="PWRule85" class="InputIndicator InputIndicatorNotOK"></div>
+									The password must contain at least one upper case letter A-Z!
+								</div>
+								<div class="PWRule">
+									<div id="PWRule86" class="InputIndicator InputIndicatorNotOK"></div>
+									The password must contain at least one number 0-9!
+								</div>
+								<div class="PWRule">
+									<div id="PWRule65" class="InputIndicator InputIndicatorNotOK"></div>
+									The password must contain at least one special character! Ex: @$*#!
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>		                                                        
+			<tr>
+				<td class="LabelV150"><span id="password2_label">Password Again:</span></td>
+				<td>
+				    <input id="password2" class="CreateAccountFormInput" type="password" name="reg_password2" onkeyup="checkPassword2();" onblur="checkPassword2(1);" value="" maxlength="50">
+				    <div id="password2_indicator" class="InputIndicator" style="background-image: url(https://miracle74.com/layouts/miracle/images/general/nok.gif);"></div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><span id="password2_check" class="FormFieldError"></span></td>
+			</tr>
+				<tr height="85">
+					<td></td>
+					<td><div class="g-recaptcha" data-theme="light" data-sitekey="6Lc_xdwpAAAAAJxQ4I8qYD8bM8a3dfcq9mFd0Khi"></div></td>
+				</tr>
+		</table>
+	</div>
+	<div class="BoxContentContainer" style="margin-top: 5px;">
+		<p class="InfoBox BoxShadowBorder" style="padding:6px;">
+			<label class="check">
+				<input type="checkbox" name="playsessionagreement" value="true" >
+				I consent that Miracle is saving play sessions for the sole purpose of improving the gaming experience or enforcing the Miracle Rules. Saved play sessions will contain the entire user experience, including, but not limited to, chats and player interaction.
+			</label>
+		</p>
+	</div>
+	<div sclass="BoxContentContainer" style="margin-top: 5px;">
+		<div class="InfoBox BoxShadowBorder" style="padding:6px;">
+			<p style="margin-bottom: 5px;"><b>Please select the following check box:</b></p>
+			
+			<p style="margin: 3px 0px 0px 0px;">
+				<label class="check">
+					<input type="checkbox" name="agreeagreements" value="true"  onclick="if(this.checked == true) {document.getElementById('agreeagreements_errormessage').innerHTML = '';} else {document.getElementById('agreeagreements_errormessage').innerHTML = 'You have to agree to the Miracle 7.4 Service Agreement, to the Miracle 7.4 Rules and the Miracle 7.4 Privacy Policy in order to create an account!';}"/>
+					I agree to the Miracle <a href="?subtopic=serviceagreement" target="_BLANK"><b>Service Agreement</b></a>, the Miracle <b><a href="?subtopic=rules" target="_BLANK">Rules</b></a> and the Miracle <a href="?subtopic=privacypolice" target="_BLANK"><b>Privacy Policy</b></a>.
+				</label>
+			</p>
+			<p style="margin:3px 0px 0px 0px;" id="agreeagreements_errormessage" class="FormFieldError"></p>
+		</div>
+	</div><br>
+	<center>
+		<input class="InputButton" type="submit" value="Submit" alt="Submit">
+		<input type="hidden" name="ref" value="0">
+        <input type="hidden" name="step" value="1">
+        <input type="hidden" name="noframe" value="">
+	</center></form>
+	<script type="text/javascript">
+		checkAccount();
+		checkEmail();
+		checkPassword1();
+		checkPassword2();
+	</script><script src="https://www.google.com/recaptcha/api.js" async defer></script>						</div>
 					</div>
 					<div id="Footer">
 												Copyright by Miracle 2024. All rights reserved.<br/>
@@ -357,7 +440,7 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 						</div>
 						<div class="content">
 							<div class="status" onClick="window.location='?subtopic=whoisonline'">
-                                									<span class="playersNumber">804 Players Online</span>
+                                									<span class="playersNumber">878 Players Online</span>
 															</div>
 							<!--<div style="text-align:center;font-weight:bold;margin-top: 10px;">Official Launch In:</div>
 							<div class="countdown-container">
@@ -392,55 +475,55 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 							<div class="playerBox dark">
 								<a href="?subtopic=characters&name=Joaquin">
 								<div class="outfit">
-									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=152&head=12&body=49&legs=14&feet=0&addons=2">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=131&head=12&body=49&legs=14&feet=0&addons=2">
 								</div>
 								<div class="info">
 									<span class="name">1 - Joaquin</span>
-									<span class="levelvoc"><span class="level">157,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+835k</b> xp</span></span>
+									<span class="levelvoc"><span class="level">158,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+1kk</b> xp</span></span>
 								</div>
 								</a>
 							</div>
 							<div class="playerBox light">
-								<a href="?subtopic=characters&name=Rich">
+								<a href="?subtopic=characters&name=Shajkan">
 								<div class="outfit">
-									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=281&head=88&body=79&legs=88&feet=94&addons=3">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=131&head=79&body=94&legs=85&feet=91&addons=0">
 								</div>
 								<div class="info">
-									<span class="name">2 - Rich</span>
-									<span class="levelvoc"><span class="level">127,</span> <span class="vocation">Elite Knight</span><span class="exp"><b>+700k</b> xp</span></span>
+									<span class="name">2 - Shajkan</span>
+									<span class="levelvoc"><span class="level">131,</span> <span class="vocation">Elder Druid</span><span class="exp"><b>+1kk</b> xp</span></span>
 								</div>
 								</a>
 							</div>
 							<div class="playerBox dark">
-								<a href="?subtopic=characters&name=Cracked">
+								<a href="?subtopic=characters&name=Rich">
 								<div class="outfit">
-									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=128&head=1&body=57&legs=57&feet=94&addons=0">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=281&head=88&body=79&legs=88&feet=94&addons=3">
 								</div>
 								<div class="info">
-									<span class="name">3 - Cracked</span>
-									<span class="levelvoc"><span class="level">124,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+654k</b> xp</span></span>
+									<span class="name">3 - Rich</span>
+									<span class="levelvoc"><span class="level">128,</span> <span class="vocation">Elite Knight</span><span class="exp"><b>+738k</b> xp</span></span>
 								</div>
 								</a>
 							</div>
 							<div class="playerBox light">
-								<a href="?subtopic=characters&name=Windrunner">
+								<a href="?subtopic=characters&name=Magic+Zuk">
 								<div class="outfit">
-									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=156&head=94&body=94&legs=114&feet=94&addons=3">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=133&head=94&body=95&legs=42&feet=114&addons=3">
 								</div>
 								<div class="info">
-									<span class="name">4 - Windrunner</span>
-									<span class="levelvoc"><span class="level">70,</span> <span class="vocation">Royal Paladin</span><span class="exp"><b>+522k</b> xp</span></span>
+									<span class="name">4 - Magic Zuk</span>
+									<span class="levelvoc"><span class="level">81,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+722k</b> xp</span></span>
 								</div>
 								</a>
 							</div>
 							<div class="playerBox dark">
 								<a href="?subtopic=characters&name=Klepto">
 								<div class="outfit">
-									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="https://miracle74.com/outfits/outfit.php?id=131&head=114&body=114&legs=114&feet=114&addons=0">
+									<img style="width: 48px; height: 48px;position: absolute; top: -16px; left: -18px;" src="/outfits/outfit.php?id=131&head=114&body=114&legs=114&feet=114&addons=0">
 								</div>
 								<div class="info">
 									<span class="name">5 - Klepto</span>
-									<span class="levelvoc"><span class="level">124,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+490k</b> xp</span></span>
+									<span class="levelvoc"><span class="level">125,</span> <span class="vocation">Master Sorcerer</span><span class="exp"><b>+674k</b> xp</span></span>
 								</div>
 								</a>
 							</div>							</div>
@@ -454,19 +537,19 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/dc230af1-f417-4d1f-9588-fdde39d815f1-profile_image-300x300.png">
 									<div class="info">
 										<span class="name"><b>jaou1</b></span>
-										<span class="viewers">Viewers: 93</span>
+										<span class="viewers">Viewers: 58</span>
 										<div class="cast_live">
 											<div class="castIcon"></div>
 										</div>
 									</div>
 								</div>
 							</a>
-													<a class="linkButton" href="https://twitch.tv/dyhboladao" target="_BLANK">
+													<a class="linkButton" href="https://twitch.tv/1indio" target="_BLANK">
 								<div class="streamerBox clearfix">
-									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/1828de7a-2905-4d2d-8f67-e293774e023b-profile_image-300x300.png">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/6b6f3851-45c4-4232-8841-8cf24f673feb-profile_image-300x300.png">
 									<div class="info">
-										<span class="name"><b>dyhboladao</b></span>
-										<span class="viewers">Viewers: 23</span>
+										<span class="name"><b>1indio</b></span>
+										<span class="viewers">Viewers: 41</span>
 										<div class="cast_live">
 											<div class="castIcon"></div>
 										</div>
@@ -478,19 +561,7 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/34a0c800-f3e7-4bb4-87e3-80abd3be4c6d-profile_image-300x300.png">
 									<div class="info">
 										<span class="name"><b>bonistv420</b></span>
-										<span class="viewers">Viewers: 10</span>
-										<div class="cast_live">
-											<div class="castIcon"></div>
-										</div>
-									</div>
-								</div>
-							</a>
-													<a class="linkButton" href="https://twitch.tv/grorktv" target="_BLANK">
-								<div class="streamerBox clearfix">
-									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/d97792dc-80cf-4e63-bd79-1297792be191-profile_image-300x300.png">
-									<div class="info">
-										<span class="name"><b>grorktv</b></span>
-										<span class="viewers">Viewers: 3</span>
+										<span class="viewers">Viewers: 9</span>
 										<div class="cast_live">
 											<div class="castIcon"></div>
 										</div>
@@ -502,7 +573,19 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/c8c56550-39c6-4b07-bee6-7e5f92387cfa-profile_image-300x300.png">
 									<div class="info">
 										<span class="name"><b>RyakePlay</b></span>
-										<span class="viewers">Viewers: 3</span>
+										<span class="viewers">Viewers: 1</span>
+										<div class="cast_live">
+											<div class="castIcon"></div>
+										</div>
+									</div>
+								</div>
+							</a>
+													<a class="linkButton" href="https://twitch.tv/que_angustia" target="_BLANK">
+								<div class="streamerBox clearfix">
+									<img src="https://static-cdn.jtvnw.net/jtv_user_pictures/84823a65-a82d-455c-a75b-a2260576b946-profile_image-300x300.png">
+									<div class="info">
+										<span class="name"><b>que_angustia</b></span>
+										<span class="viewers">Viewers: 1</span>
 										<div class="cast_live">
 											<div class="castIcon"></div>
 										</div>
@@ -549,7 +632,7 @@ varloginStatus=0; loginStatus='false';var activeSubmenuItem='accountmanagement';
 	<script src="https://miracle74.com/layouts/miracle/js/countdown_v9.js"></script>
 	<script>
 		//updateCountdown();
-		var serverTime = 1731771319;
+		var serverTime = 1731792316;
     	var targetTime = 1731830400;
 		updateServerSave(serverTime, targetTime);
 	</script>
